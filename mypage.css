@@ -1,0 +1,63 @@
+@charset "UTF-8";
+body
+{
+	color: #666;/*文字色*/
+	font-family:"Hiragino Kaku Gothic ProN";/*フォント*/
+	margin:0;/*位置*/
+}
+a img:hover {opacity:0.8;}/*矢印が透明に*/
+
+/*レイアウト*/
+header,section
+{
+  margin:0;
+	width: 100%;/*画面の横幅*/
+	height: 100vh;/*画面の高さ*/
+	display:table;
+  text-align:center;
+}
+header div#group,
+section div.scGroup
+{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+figure {
+	position: relative;
+	overflow: hidden;
+	width: 300px;
+}
+figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.6);
+	-webkit-transition: .3s;
+	transition: .3s;
+	opacity: 0;
+}
+figure:hover figcaption {
+	opacity: 1;
+}
+
+/*矢印*/
+header div#group img,
+section div.scGroup img,
+footer img {margin:0px ; width:40px; height:auto;}
+
+/*1ページ目*/
+header {color:white; background:#000 url(lasvegas.jpg) center center /cover no-repeat;}/*背景を中央に指定*/
+header div#group h1 {font-size:500%; margin:0 auto;}
+header div#group p {font-size:100%; font-weight:bolder;}
+
+/*2ページ目*/
+section {color: #666;}
+section#sc1 {background:#9F0;}
+section#sc2 {background: #FF8856; color:#fff;}
+section#sc3 {background: #FF3366}
+section div.scGroup h1.ttl {font-size:170%; margin:0 auto;}
+section div.scGroup p {margin:1em auto; text-align:left}
