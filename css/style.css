@@ -36,7 +36,7 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 /* ヘッダー
 ------------------------------------------------------------*/
 #header{
-	background: url(../images/IMG_1838.jpg) 40% 100% fixed;
+	background: url(../images/IMG_1838.jpg) 40em 100% fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
 	max-width: 100%;
@@ -211,7 +211,7 @@ section h2{
 		padding: 20px 10px;
 	}
 
-	/* SEC02 MESSAGE
+	/* About me
 	-----------------*/
 	.txt, .bg{
 		width: 50%;
